@@ -1,2 +1,6 @@
 #ignore test executables
 *.k
+
+#Keep test dirs
+!ok
+!errors
