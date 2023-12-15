@@ -1,0 +1,21 @@
+[build]
+
+source = "main.c"
+
+bin = "kls_hasher"
+
+makevers = "0.0.1"
+
+automakevers = "0.0.1"
+
+tests = "tests"
+
+[tests]
+
+testsdir = "ok"
+
+errortestsdir = "errors"
+
+[versions]
+
+"0.0.1" = "First commit"
