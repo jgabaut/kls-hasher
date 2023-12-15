@@ -37,10 +37,5 @@ To build this repo, you need to install `koliseo`.
 If you have installed `koliseo` previously, you can build the binary with:
 
 ```sh
-./scripts/bootstrap_anvil.sh repo_invil && ./anvil build
-```
-
-If you don't have a rust compiler, you can build with:
-```sh
 ./scripts/bootstrap_anvil.sh repo_amboso && ./anvil build
 ```
