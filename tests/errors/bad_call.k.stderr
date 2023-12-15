@@ -1,0 +1,3 @@
+[ERROR]    kls_gulp_file_sized_to_kstr():  {File does not exist}.
+try_kls_gulp_file_to_kstr():  kls_gulp_file_sized_to_kstr() failed with err {File does not exist}.
+Failed KLS_GULP_FILE_KSTR()
