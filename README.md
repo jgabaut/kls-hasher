@@ -27,14 +27,20 @@ To build this repo, you need to install `koliseo`.
   git clone git@github.com:jgabaut/koliseo.git
   ```
 
-  - Install `koliseo` with debug build:
+  - Install `koliseo` with gulp build:
 
   ```
   cd $KOLISEO_REPO || exit 1;
-  ./configure --enable-debug=yes && make rebuild && make install
+  ./configure --enable-gulp=yes && make rebuild && make install
   ```
 
 If you have installed `koliseo` previously, you can build the binary with:
+
+```sh
+./scripts/bootstrap_anvil.sh repo_invil && ./anvil build
+```
+
+If you don't have a Rust compiler installed, you can build the binary with:
 
 ```sh
 ./scripts/bootstrap_anvil.sh repo_amboso && ./anvil build
