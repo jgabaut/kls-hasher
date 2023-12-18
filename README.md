@@ -30,8 +30,8 @@ To build this repo, you need to install `koliseo`.
   - Install `koliseo` with gulp build:
 
   ```
-  cd $KOLISEO_REPO || exit 1;
-  ./configure --enable-gulp=yes && make rebuild && make install
+  cd $PUT_KOLISEO_REPO_DIR_HERE || exit 1;
+  ./configure --enable-gulp=yes && make rebuild && sudo make install
   ```
 
 If you have installed `koliseo` previously, you can build the binary with:
