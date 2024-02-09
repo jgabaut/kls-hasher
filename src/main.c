@@ -69,10 +69,10 @@ void hash_table_print(hash_table* ht)
 
 hash_table* hash_table_create(size_t size, hash_f * hash, Koliseo* kls)
 {
-    hash_table* ht = KLS_PUSH(kls,hash_table,1);
+    hash_table* ht = KLS_PUSH(kls,hash_table);
     ht->size = size;
     ht->hash = hash;
-    ht->pairs = KLS_PUSH(kls,ht_entry*, ht->size);
+    ht->pairs = KLS_PUSH_ARR(kls,ht_entry*, ht->size);
     return ht;
 }
 
@@ -100,9 +100,9 @@ bool hash_table_insert(hash_table* ht, const char *key, size_t key_size, void* o
 {
     if (key == NULL || obj == NULL) return false;
     size_t index = hash_table_index(ht, key, key_size);
-    ht_entry* e = KLS_PUSH(kls,ht_entry,1);
+    ht_entry* e = KLS_PUSH(kls,ht_entry);
     e->obj = obj;
-    e->key = KLS_PUSH(kls,char,key_size);
+    e->key = KLS_PUSH_ARR(kls,char,key_size);
     e->key = memcpy((void*)e->key, key, key_size);
     e->keylen = key_size;
 
